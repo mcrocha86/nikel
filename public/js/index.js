@@ -10,7 +10,7 @@ document.getElementById("login-form"), addEventListener("submit", function(e) {
     
     const email = document.getElementById("email-input").value;
     const password = document.getElementById("password-input").value;
-    const checkSession = this.document.getElementById("session-check").checked;
+    const checkSession = document.getElementById("session-check").checked;
 
     const account = getAccount(email);
 
@@ -56,7 +56,7 @@ document.getElementById("create-form").addEventListener("submit", function(e) {
 
     myModal.hide();
 
-    alert("Conta criada com sucesso")
+    alert("Conta criada com sucesso");
 });
 
 function checkLogged() {
